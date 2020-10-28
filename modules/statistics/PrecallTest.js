@@ -81,9 +81,9 @@ export async function init(options) {
 
     const { callStatsID, callStatsSecret, disableThirdPartyRequests } = options;
 
-    if (!callStatsID || !callStatsSecret || disableThirdPartyRequests) {
+    // if (!callStatsID || !callStatsSecret || disableThirdPartyRequests) {
         throw new Error('Callstats is disabled');
-    }
+    // }
 
     await _loadScript();
     // eslint-disable-next-line new-cap
